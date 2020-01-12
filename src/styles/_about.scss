@@ -1,20 +1,19 @@
-.home-window {
+.about-window {
   width: 100%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33% 66%;
   grid-template-rows: auto;
   padding: 3rem 0 0 0;
   @media screen and (min-width: 1600px) {
     grid-template-areas:
-      "Left  Main  Main  Right"
-      "Left  Main  Main  Right";
+      "Left  Main"
+      "Left  Main";
   }
 
   @media screen and (max-width: 1599px) {
     grid-template-areas:
-      "Main  Main  Main  Main"
-      "Left  Left  Left Left"
-      "Right  Right  Right  Right";
+      "Main  Main  Main"
+      "Left  Left  Left";
   }
 
   .sideBar {
@@ -22,10 +21,7 @@
 
   .sideBar__left {
     grid-area: Left;
-  }
-
-  .sideBar__right {
-    grid-area: Right;
+    list-style: none;
   }
 
   .content__sideBar {
@@ -34,9 +30,8 @@
   }
 
   .sideBar__style-one {
-    background: $sideBarOne;
     border-radius: 2rem;
-    box-shadow: -0.5rem 0.5rem $sideBarOneShad;
+    box-shadow: -0.5rem 0.5rem #818181;
   }
 
   .sideBar__style-two {
@@ -46,9 +41,7 @@
   }
 
   .sideBar__style-three {
-    background: $sideBarThree;
     border-radius: 2rem;
-    box-shadow: -0.5rem 0.5rem $sideBarThreeShad;
   }
 
   .main-content {
@@ -60,6 +53,33 @@
     margin: 0 1rem 1rem 1rem;
     padding: 2rem;
     border-radius: 2rem;
-    box-shadow: -0.5rem 0.5rem #818181;
+    background: $primary;
+    box-shadow: -0.5rem 0.5rem $sideBarTwoShad;
+  }
+
+  .pro-presentation {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    li {
+      width: 1rem;
+      margin: 0;
+      padding: 0;
+      line-height: 1rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: $secondary;
+        font-size: 0.75rem;
+      }
+    }
+    p {
+      margin: 0 0 0 1rem;
+    }
   }
 }

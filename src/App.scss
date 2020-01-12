@@ -14,6 +14,10 @@
   width: 100%;
   margin: 5rem 0 0 0;
   min-height: calc(100vh - 11rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 //!Component and global imports
@@ -22,3 +26,4 @@
 
 //!Page imports
 @import "./styles/home";
+@import "./styles/about";
