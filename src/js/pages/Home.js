@@ -60,42 +60,6 @@ export default class Home extends Component {
                 </ul>
               </ul>
             </div>
-
-            <div className="content__sideBar sideBar__style-three">
-              <h3>
-                Small Animal Dentistry Wet Lab Assistant
-                <br />
-                UMC - CVM
-              </h3>
-              <ul className="multi">
-                <h4>2019 | Volunteer</h4>
-                <ul className="inset-column">
-                  <li>March</li>
-                  <li>June</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2018 | Volunteer</h4>
-                <ul className="inset-column">
-                  <li>May</li>
-                  <li>June</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2017 | Volunteer</h4>
-                <ul className="inset-column">
-                  <li>May</li>
-                  <li>June</li>
-                </ul>
-              </ul>
-              <ul>
-                <h4>2016 | Volunteer</h4>
-                <ul className="inset-column">
-                  <li>May</li>
-                  <li>June</li>
-                </ul>
-              </ul>
-            </div>
           </div>
 
           <div className="main-content">
@@ -118,8 +82,10 @@ export default class Home extends Component {
                 and Public Policy Advisory Council.
               </p>
             </div>
+          </div>
 
-            <div className="content__article">
+          <div className="sideBar sideBar__right">
+            <div className="content__sideBar sideBar__style-two">
               <h1>Skills / Interests</h1>
               <ul className="multi">
                 <h3>General Equine Medicine and Surgery</h3>
@@ -183,84 +149,6 @@ export default class Home extends Component {
                     Participant in the University of Missouri - College of
                     Veterinary Medicine graded preceptorship program
                   </li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-
-          <div className="sideBar sideBar__right">
-            <div className="content__sideBar sideBar__style-two">
-              <h3>SCAAEP Equine Dentistry Short Course Instructor</h3>
-              <ul className="multi">
-                <h4>2019 | Coordinator</h4>
-                <ul className="inset">
-                  <li>Utah State University</li>
-                  <li>Washington State University</li>
-                  <li>Tuskegee University</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2018 | Coordinator</h4>
-                <ul className="inset">
-                  <li>University of Missouri</li>
-                  <li>Washington State University</li>
-                  <li>Kansas State University</li>
-                  <li>Mississippi State University</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2017 | Coordinator</h4>
-                <ul className="inset">
-                  <li>North Carolina State University</li>
-                  <li>Purdue University</li>
-                  <li>Oklahoma State University</li>
-                  <li>University of Wisconsin</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2016 | Coordinator</h4>
-                <ul className="inset">
-                  <li>Mississippi State University</li>
-                  <li>Iowa State University</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2014 | Volunteer</h4>
-                <ul className="inset">
-                  <li>
-                    2014 - Virginia-Maryland Regional College of Veterinary
-                    Medicine
-                  </li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2013 | Volunteer</h4>
-                <ul className="inset">
-                  <li>Iowa State University</li>
-                  <li>Tuskegee University</li>
-                  <li>University of Florida</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2012 | Volunteer</h4>
-                <ul className="inset">
-                  <li>Mississippi State University</li>
-                  <li>Louisiana State University</li>
-                  <li>Kansas State University</li>
-                </ul>
-              </ul>
-              <ul className="multi">
-                <h4>2011 | Volunteer</h4>
-                <ul className="inset">
-                  <li>University of Missouri</li>
-                  <li>University of Minnesota</li>
-                </ul>
-              </ul>
-              <ul>
-                <h4>2010 | Volunteer</h4>
-                <ul className="inset">
-                  <li>University of California - Davis</li>
-                  <li>University of Missouri</li>
                 </ul>
               </ul>
             </div>

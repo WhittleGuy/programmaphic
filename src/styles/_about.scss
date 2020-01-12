@@ -31,7 +31,8 @@
 
   .sideBar__style-one {
     border-radius: 2rem;
-    box-shadow: -0.5rem 0.5rem #818181;
+    box-shadow: -0.5rem 0.5rem $sideBarOneShad;
+    background: $sideBarOne;
   }
 
   .sideBar__style-two {
@@ -42,6 +43,14 @@
 
   .sideBar__style-three {
     border-radius: 2rem;
+    box-shadow: -0.5rem 0.5rem $sideBarThreeShad;
+    background: $sideBarThree;
+  }
+
+  .sideBar__style-four {
+    border-radius: 2rem;
+    box-shadow: -0.5rem 0.5rem #818181;
+    background: white;
   }
 
   .main-content {
@@ -53,8 +62,6 @@
     margin: 0 1rem 1rem 1rem;
     padding: 2rem;
     border-radius: 2rem;
-    background: $primary;
-    box-shadow: -0.5rem 0.5rem $sideBarTwoShad;
   }
 
   .pro-presentation {
