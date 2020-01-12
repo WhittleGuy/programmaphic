@@ -7,15 +7,15 @@ export default class Nav extends Component {
       <div className="NavBar">
         <div className="NavLinks">
           <NavLink className="NavLink" to="./home">
-            Home
+            HOME
           </NavLink>
           <NavLink className="NavLink" to="./about">
-            About
+            ABOUT
           </NavLink>
-          <NavLink className="NavLink" to="./home">
-            Contact
+          <NavLink className="NavLink" to="./contact">
+            CONTACT
           </NavLink>
-          <NavLink className="NavLink" to="./home">
+          <NavLink className="NavLink" to="./faq">
             FAQ
           </NavLink>
         </div>

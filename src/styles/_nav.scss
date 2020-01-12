@@ -1,0 +1,57 @@
+.NavLinks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 5rem;
+  background: $background;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .NavLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10%);
+    }
+  }
+
+  .active {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4.75rem;
+      left: 0;
+      width: 10rem;
+      height: 0.25rem;
+      background: $secondary;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4.75rem;
+        left: 0;
+        width: 10rem;
+        height: 0.75rem;
+        background: $secondary;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.Footer {
+  width: 100%;
+  height: 6rem;
+  position: absolute;
+  bottom: -6rem;
+  left: 0;
+
+  background: $background;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
+  h4 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
