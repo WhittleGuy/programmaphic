@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class About extends Component {
+export default class Professional extends Component {
   render() {
     return (
       <div className="main-window">
@@ -61,6 +61,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2018 | September - MVMA Fall Equine Dentistry Seminar and Wet
@@ -111,6 +112,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2018 | March - Indiana Veterinary Medical Association Annual
@@ -197,6 +199,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2018 | January - MVMA MAVP Mini-Topics</h4>
                 <ul className="pro-presentation">
@@ -212,6 +215,7 @@ export default class About extends Component {
                   <p>The Wild Horse Conundrum</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2017 | September - MVMA Fall Equine Dentistry Seminar and Wet
@@ -262,6 +266,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2017 | February - Kansas State University
@@ -281,6 +286,7 @@ export default class About extends Component {
                   <p>Veterinary Scope of Practice Issues: Equine Dentistry</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2017 | February - Kansas Equine Practitioners</h4>
                 <ul className="pro-presentation">
@@ -320,6 +326,7 @@ export default class About extends Component {
                   <p>Equine Dental Anatomy & Physiology</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2017 | January - MVMA MAVP Mini-Topics</h4>
                 <ul className="pro-presentation">
@@ -335,6 +342,7 @@ export default class About extends Component {
                   <p>Dental Tips and Tricks From A Country Vet</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2016 | December - AAEP</h4>
                 <ul className="pro-presentation">
@@ -353,6 +361,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2016 | September - AVMA Policy Forum</h4>
                 <ul className="pro-presentation">
@@ -371,6 +380,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2016 | February - Missouri SCAAEP Chapter Meeting</h4>
                 <ul className="pro-presentation">
@@ -398,6 +408,7 @@ export default class About extends Component {
                   <p>Equine Dental Anatomy and Physiology</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2015 | September - MVMA Fall Equine Dentistry Seminar and Wet
@@ -448,6 +459,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2015 | March - Mid-Rivers Equine Center Referral Veterinarians
@@ -490,6 +502,7 @@ export default class About extends Component {
                   <p>Veterinary Legislation - What's In It For Me?</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2015 | January - MVMA MAVP Mini-Topics</h4>
                 <ul className="pro-presentation">
@@ -505,6 +518,7 @@ export default class About extends Component {
                   <p>Equine Dentistry - It All Starts With The Oral Exam</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>2013 | April - Colorado VMA Big Ideas Forum</h4>
                 <ul className="pro-presentation">
@@ -520,6 +534,7 @@ export default class About extends Component {
                   <p>Legal and Ethical Aspects of Equine Dentistry</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2013 | September - MVMA Fall Equine Dentistry Seminar and Wet
@@ -562,6 +577,7 @@ export default class About extends Component {
                   <p>Equine Dental Anatomy and Physiology</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2013 | January - Missouri Academy of Veterinary Practice -
@@ -582,6 +598,7 @@ export default class About extends Component {
                   </p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2011 | January - Missouri Academy of Veterinary Practice -
@@ -600,6 +617,7 @@ export default class About extends Component {
                   <p>Deer Medicine For Dummies</p>
                 </ul>
               </ul>
+              //!---------------------------------------------------------------------------------
               <ul className="multi">
                 <h4>
                   2009 | January - Missouri Academy of Veterinary Practice -
@@ -635,7 +653,7 @@ export default class About extends Component {
               </ul>
             </div>
           </div>
-
+          //!---------------------------------------------------------------------------------
           <div className="main-content">
             <div className="content__article sideBar__style-three">
               <h1>Professional Affiliations</h1>
@@ -695,6 +713,7 @@ export default class About extends Component {
                 </ul>
               </ul>
             </div>
+            //!---------------------------------------------------------------------------------
             <div className="content__article sideBar__style-two">
               <h1>Employment History</h1>
               <ul className="multi">
@@ -768,8 +787,9 @@ export default class About extends Component {
                 </ul>
               </ul>
             </div>
+            //!---------------------------------------------------------------------------------
             <div className="content__article sideBar__style-three">
-              <h3>SCAAEP Equine Dentistry Short Course Instructor</h3>
+              <h1>SCAAEP Equine Dentistry Short Course Instructor</h1>
               <ul className="multi">
                 <h4>2019 | Coordinator</h4>
                 <ul className="inset">
@@ -843,12 +863,9 @@ export default class About extends Component {
                 </ul>
               </ul>
             </div>
+            //!---------------------------------------------------------------------------------
             <div className="content__article sideBar__style-two">
-              <h3>
-                Small Animal Dentistry Wet Lab Assistant
-                <br />
-                UMC - CVM
-              </h3>
+              <h1>Small Animal Dentistry Wet Lab Assistant UMC - CVM</h1>
               <ul className="multi">
                 <h4>2019 | Volunteer</h4>
                 <ul className="inset-column">

@@ -9,8 +9,8 @@ export default class Nav extends Component {
           <NavLink className="NavLink" to="./home">
             HOME
           </NavLink>
-          <NavLink className="NavLink" to="./about">
-            ABOUT
+          <NavLink className="NavLink" to="./professional">
+            PROFESSIONAL
           </NavLink>
           <NavLink className="NavLink" to="./contact">
             CONTACT

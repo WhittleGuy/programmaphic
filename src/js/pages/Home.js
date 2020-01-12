@@ -86,7 +86,7 @@ export default class Home extends Component {
 
           <div className="sideBar sideBar__right">
             <div className="content__sideBar sideBar__style-two">
-              <h1>Skills / Interests</h1>
+              <h2>Skills / Interests</h2>
               <ul className="multi">
                 <h3>General Equine Medicine and Surgery</h3>
                 <h4>Primary areas of interest include:</h4>
