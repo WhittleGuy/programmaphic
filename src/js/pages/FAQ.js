@@ -2,6 +2,6 @@ import React, { Component } from "react";
 
 export default class FAQ extends Component {
   render() {
-    return <div></div>;
+    return <div className="main-window"></div>;
   }
 }

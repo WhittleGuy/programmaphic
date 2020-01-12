@@ -76,3 +76,18 @@ ul {
     margin: 0.25rem 2rem;
   }
 }
+
+.inset-column {
+  margin: 0;
+  h3 {
+  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  li {
+    margin: 0.25rem 2rem;
+  }
+}

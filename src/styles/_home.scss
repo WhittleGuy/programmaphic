@@ -33,15 +33,21 @@
   }
 
   .sideBar__style-one {
-    background: $sideBar;
+    background: $sideBarOne;
     border-radius: 2rem;
-    box-shadow: -0.5rem 0.5rem $topazShad;
+    box-shadow: -0.5rem 0.5rem $sideBarOneShad;
   }
 
   .sideBar__style-two {
-    background: $tertiary;
+    background: $sideBarTwo;
     border-radius: 2rem;
-    box-shadow: -0.5rem 0.5rem $nonPhotoBlueShad;
+    box-shadow: -0.5rem 0.5rem $sideBarTwoShad;
+  }
+
+  .sideBar__style-three {
+    background: $sideBarThree;
+    border-radius: 2rem;
+    box-shadow: -0.5rem 0.5rem $sideBarThreeShad;
   }
 
   .main-content {

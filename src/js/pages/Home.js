@@ -14,45 +14,78 @@ export default class Home extends Component {
               Animal Science.
             </p>
           </div>
-          <div className="content__sideBar sideBar__style-one">
+
+          <div className="content__sideBar sideBar__style-three">
             <h3>Research Skills</h3>
             <ul>
               <li>Atomic Absorption Spectrophotometry</li>
               <li>Research Animal Care</li>
             </ul>
           </div>
+
           <div className="content__sideBar sideBar__style-one">
             <h3>Education</h3>
+            <ul className="multi">
+              <h4>1994 | D.V.M.</h4>
+              <ul className="inset">
+                <li>University of Missouri College of Veterinary Medicine</li>
+                <li>Columbia, MO</li>
+              </ul>
+            </ul>
+            <ul className="multi">
+              <h4>1987 - 1990 | Undergraduate</h4>
+              <ul className="inset">
+                <li>Northeast Missouri State University</li>
+                <li>Kirksville, MO</li>
+              </ul>
+            </ul>
             <ul>
-              <li>
-                <h4>1994</h4>
-                D.V.M
-                <br />
-                University of Missouri
-                <br />
-                College of Veterinary Medicine
-              </li>
-              <li>
-                <h4>1987-2000</h4>
-                Undergraduate
-                <br />
-                Northeast Missouri State University
-                <br />
-                Kirksville, MO
-              </li>
-              <li>
-                <h4>1983-1987</h4>
-                High School
-                <br />
-                Diamond High School
-                <br />
-                Diamond, MO
-                <br />
-                Valedictorian
-              </li>
+              <h4>1983 - 1987 | High School</h4>
+              <ul className="inset">
+                <li>Diamond High School</li>
+                <li>Diamond, MO</li>
+                <li>Valedictorian</li>
+              </ul>
+            </ul>
+          </div>
+
+          <div className="content__sideBar sideBar__style-three">
+            <h3>
+              Small Animal Dentistry Wet Lab Assistant
+              <br />
+              UMC - CVM
+            </h3>
+            <ul className="multi">
+              <h4>2019 | Volunteer</h4>
+              <ul className="inset-column">
+                <li>March</li>
+                <li>June</li>
+              </ul>
+            </ul>
+            <ul className="multi">
+              <h4>2018 | Volunteer</h4>
+              <ul className="inset-column">
+                <li>May</li>
+                <li>June</li>
+              </ul>
+            </ul>
+            <ul className="multi">
+              <h4>2017 | Volunteer</h4>
+              <ul className="inset-column">
+                <li>May</li>
+                <li>June</li>
+              </ul>
+            </ul>
+            <ul>
+              <h4>2016 | Volunteer</h4>
+              <ul className="inset-column">
+                <li>May</li>
+                <li>June</li>
+              </ul>
             </ul>
           </div>
         </div>
+
         <div className="main-content">
           <div className="content__article">
             <h1>The Making of Dr. Whittle</h1>
@@ -73,6 +106,7 @@ export default class Home extends Component {
               Public Policy Advisory Council.
             </p>
           </div>
+
           <div className="content__article">
             <h1>Skills / Interests</h1>
             <ul className="multi">
@@ -217,7 +251,6 @@ export default class Home extends Component {
                 <li>University of Missouri</li>
               </ul>
             </ul>
-            <ul></ul>
           </div>
         </div>
       </div>
