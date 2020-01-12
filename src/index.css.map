@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,mJAED;EACZ,sBAAsB,EAAE,WAAW;EACnC,uBAAuB,EAAE,SAAS;CACnC;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,mEACF;CACZ",
+    "sources": [
+        "index.scss",
+        "App.scss",
+        "styles/_variables.scss",
+        "styles/_button.scss",
+        "styles/_text.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "App.scss",
+        "styles/_variables.scss",
+        "styles/_button.scss",
+        "styles/_text.scss"
+    ],
+    "names": [],
+    "file": "App.css"
+}
