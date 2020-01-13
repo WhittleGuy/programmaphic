@@ -6,17 +6,17 @@ export default class Nav extends Component {
     return (
       <div className="NavBar">
         <div className="NavLinks">
-          <NavLink className="NavLink" to="./home">
-            HOME
+          <NavLink className="NavLink" to="./PageOne">
+            ONE
           </NavLink>
-          <NavLink className="NavLink" to="./professional">
-            PROFESSIONAL
+          <NavLink className="NavLink" to="./PageTwo">
+            TWO
           </NavLink>
-          <NavLink className="NavLink" to="./contact">
-            CONTACT
+          <NavLink className="NavLink" to="./PageThree">
+            THREE
           </NavLink>
-          <NavLink className="NavLink" to="./faq">
-            FAQ
+          <NavLink className="NavLink" to="./PageFour">
+            FOUR
           </NavLink>
         </div>
       </div>

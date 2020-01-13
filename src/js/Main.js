@@ -1,21 +1,21 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Professional from "./pages/Professional";
-import FAQ from "./pages/FAQ";
-import Contact from "./pages/Contact";
+import PageOne from "./pages/PageOne";
+import PageTwo from "./pages/PageTwo";
+import PageThree from "./pages/PageThree";
+import PageFour from "./pages/PageFour";
 
 const Main = () => (
   <Switch>
     <Route exact path="/">
       <Redirect to="./home" />
     </Route>
-    <Route exact path="/home" component={Home} />
-    <Route path="/professional" component={Professional} />
-    <Route path="/faq" component={FAQ} />
-    <Route path="/contact" component={Contact} />
-    <Route path="/*" component={Home} />
+    <Route exact path="/PageOne" component={PageOne} />
+    <Route path="/PageTwo" component={PageTwo} />
+    <Route path="/PageThree" component={PageThree} />
+    <Route path="/PageFour" component={PageFour} />
+    <Route path="/*" component={PageOne} />
   </Switch>
 );
 

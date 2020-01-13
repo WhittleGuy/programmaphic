@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class FAQ extends Component {
+export default class PageTwo extends Component {
   render() {
     return <div className="main-window"></div>;
   }
