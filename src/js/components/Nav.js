@@ -9,15 +9,6 @@ export default class Nav extends Component {
           <NavLink className="NavLink" to="./Moire">
             MOIRE
           </NavLink>
-          <NavLink className="NavLink" to="./PageTwo">
-            TWO
-          </NavLink>
-          <NavLink className="NavLink" to="./PageThree">
-            THREE
-          </NavLink>
-          <NavLink className="NavLink" to="./PageFour">
-            FOUR
-          </NavLink>
         </div>
       </div>
     );
