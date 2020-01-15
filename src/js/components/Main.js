@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 import Moire from "../pages/Moire";
 import Sines from "../pages/Sines";
-import PageThree from "../pages/PageThree";
+import Perlin from "../pages/Perlin";
 import PageFour from "../pages/PageFour";
 
 const Main = () => (
@@ -13,7 +13,7 @@ const Main = () => (
     </Route>
     <Route exact path="/moire" component={Moire} />
     <Route path="/sines" component={Sines} />
-    <Route path="/PageThree" component={PageThree} />
+    <Route path="/perlin" component={Perlin} />
     <Route path="/PageFour" component={PageFour} />
     <Route path="/*" component={Moire} />
   </Switch>
