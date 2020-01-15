@@ -6,8 +6,11 @@ export default class Nav extends Component {
     return (
       <div className="NavBar">
         <div className="NavLinks">
-          <NavLink className="NavLink" to="./Moire">
+          <NavLink className="NavLink" to="./moire">
             MOIRE
+          </NavLink>
+          <NavLink className="NavLink" to="./sines">
+            SINES
           </NavLink>
         </div>
       </div>
