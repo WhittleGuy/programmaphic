@@ -41,7 +41,11 @@ export default p => {
         v.setMag(0.25);
         flowField[index] = v;
         xoff += INC;
-        p.stroke(255);
+        p.stroke(
+          Math.tan(angle) * 255,
+          Math.cos(angle) * 255,
+          Math.sin(angle) * 255
+        );
         p.push();
         p.translate(x * SCL, y * SCL);
         p.rotate(v.heading());
