@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import moire from "../library/moire";
+import moire from "../sketches/moire";
 import P5Wrapper from "react-p5-wrapper";
 
 export default class Moire extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import sines from "../library/sines";
+import sines from "../sketches/sines";
 import P5Wrapper from "react-p5-wrapper";
 
 export default class Sines extends Component {
