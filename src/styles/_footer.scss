@@ -1,22 +1,39 @@
 .Footer {
   width: 100%;
-  height: 3.5rem;
+  height: 6rem;
   position: absolute;
   bottom: -6rem;
   left: 0;
 
-  background: $background;
+  background: transparent;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
 
-  h4 {
-    color: white;
-  }
   a {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
     font-size: 1.5rem;
-    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+    background-image: radial-gradient(
+      #a7a7a7 0%,
+      #f2f2f2 55%,
+      #ffffff 57.5%,
+      #ebebeb 60%,
+      #000000 100%
+    );
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 }

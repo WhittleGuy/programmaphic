@@ -8,10 +8,10 @@ export default p => {
   let offset = p.random(200) + 5;
 
   const canvas = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight * 0.9);
+    p.createCanvas(p.windowWidth, p.windowHeight * 0.92);
     p.imageMode(p.CENTER);
     p.angleMode(p.DEGREES);
-    p.translate(p.windowWidth / 2, (p.windowHeight * 0.9) / 2);
+    p.translate(p.windowWidth / 2, (p.windowHeight * 0.92) / 2);
     p.colorMode(p.HSL);
   };
 

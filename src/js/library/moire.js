@@ -4,10 +4,10 @@
 export default p => {
   //* Creating the main canvas
   const canvas = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight * 0.9);
+    p.createCanvas(p.windowWidth, p.windowHeight * 0.92);
     p.imageMode(p.CENTER);
     p.angleMode(p.DEGREES);
-    p.translate(p.windowWidth / 2, (p.windowHeight * 0.9) / 2);
+    p.translate(p.windowWidth / 2, (p.windowHeight * 0.92) / 2);
     p.colorMode(p.HSL);
     p.background(0);
   };
@@ -32,7 +32,7 @@ export default p => {
   p.setup = () => {
     canvas();
 
-    let gfx = p.createGraphics(p.windowWidth, p.windowHeight * 0.9);
+    let gfx = p.createGraphics(p.windowWidth, p.windowHeight * 0.92);
 
     graphics(gfx);
     points(gfx, 2500);
