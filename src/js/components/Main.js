@@ -3,8 +3,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 import Moire from "../pages/Moire";
 import Sines from "../pages/Sines";
-import Perlin from "../pages/Perlin";
-import PageFour from "../pages/PageFour";
+import Flow from "../pages/Flow";
+import Lines from "../pages/Lines";
 
 const Main = () => (
   <Switch>
@@ -13,8 +13,8 @@ const Main = () => (
     </Route>
     <Route exact path="/moire" component={Moire} />
     <Route path="/sines" component={Sines} />
-    <Route path="/perlin" component={Perlin} />
-    <Route path="/PageFour" component={PageFour} />
+    <Route path="/flow" component={Flow} />
+    <Route path="/lines" component={Lines} />
     <Route path="/*" component={Moire} />
   </Switch>
 );

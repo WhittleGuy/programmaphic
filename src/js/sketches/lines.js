@@ -4,9 +4,9 @@ import Particle from "./particle";
 
 export default p => {
   const INC = 0.05;
-  const SCL = 10;
-  const WIDTH = p.floor(1200);
-  const HEIGHT = p.floor(800);
+  const SCL = 20;
+  const WIDTH = p.floor(1710);
+  const HEIGHT = p.floor(950);
   let cols, rows;
   let zoff = 0;
   let particles = [];
@@ -30,7 +30,7 @@ export default p => {
   };
 
   p.draw = () => {
-    //p.background(255);
+    p.background(0);
     let yoff = 0;
     for (let y = 0; y < rows; y++) {
       let xoff = 0;
@@ -41,23 +41,16 @@ export default p => {
         v.setMag(0.25);
         flowField[index] = v;
         xoff += INC;
-        p.stroke(0, 50);
+        p.stroke(255);
         p.push();
         p.translate(x * SCL, y * SCL);
         p.rotate(v.heading());
         p.strokeWeight(1);
-        //p.line(0, 0, SCL, 0);
+        p.line(0, 0, SCL, 0);
         p.pop();
       }
       yoff += INC;
-      zoff += 0.0001;
-    }
-
-    for (let i = 0; i < particles.length; i++) {
-      particles[i].follow(flowField);
-      particles[i].update();
-      particles[i].edges();
-      particles[i].show();
+      zoff += 0.0005;
     }
   };
 };

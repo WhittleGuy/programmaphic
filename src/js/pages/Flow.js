@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import perlin from "../sketches/perlin";
+import flow from "../sketches/flow";
 import P5Wrapper from "react-p5-wrapper";
 
-export default class Perlin extends Component {
+export default class Flow extends Component {
   render() {
     return (
       <>
         <div className="main-window" id="App">
-          <P5Wrapper sketch={perlin}></P5Wrapper>
+          <P5Wrapper sketch={flow}></P5Wrapper>
         </div>
       </>
     );

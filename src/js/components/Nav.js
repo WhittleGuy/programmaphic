@@ -12,8 +12,11 @@ export default class Nav extends Component {
           <NavLink className="NavLink" to="./sines">
             SINES
           </NavLink>
-          <NavLink className="NavLink" to="./perlin">
-            PERLIN
+          <NavLink className="NavLink" to="./lines">
+            LINES
+          </NavLink>
+          <NavLink className="NavLink" to="./flow">
+            FLOW
           </NavLink>
         </div>
       </div>
