@@ -1,40 +1,38 @@
 export default p => {
-  const colors = ["#f6f740", "#44ccff", "#ff47da"];
-  const amount = 750;
+  const COLORS = ["#f6f740", "#44ccff", "#ff47da"];
+  const RES = 750;
   let freq;
-  let amplitude;
+  let amp;
 
-  const canvas = () => {
+  const initCanvas = () => {
     p.createCanvas(p.windowWidth, p.windowHeight * 0.95);
-    p.imageMode(p.CENTER);
-    p.angleMode(p.DEGREES);
-
-    p.colorMode(p.HSL);
   };
 
+  // Defines a stroke color from the color array
   const randStroke = () => {
-    let col = Math.floor(p.random() * colors.length);
-    p.stroke(colors[col]);
+    let col = Math.floor(p.random() * COLORS.length);
+    p.stroke(COLORS[col]);
     p.strokeWeight(1);
   };
 
+  // Creates a singular sine wave
   const sineWave = () => {
     randStroke();
     let y = (p.windowHeight * 0.95) / 2;
     p.beginShape();
     p.vertex(0, y);
-    let pha = p.random(100);
-    for (let i = 1; i < amount + pha; i++) {
+    let pha = p.random(100); //phase shifts each wave
+    for (let i = 1; i < RES + pha; i++) {
       let sinOffset = Math.sin(freq * i);
-      let sinX = i * (p.windowWidth / amount) - pha;
-      let sinY = y + sinOffset * amplitude;
+      let sinX = i * (p.windowWidth / RES) - pha;
+      let sinY = y + sinOffset * amp;
       p.bezierVertex(sinX, sinY, sinX, sinY, sinX, sinY);
     }
     p.endShape();
   };
 
   p.setup = () => {
-    canvas();
+    initCanvas();
     p.noFill();
     p.smooth();
     p.background(0);
@@ -43,7 +41,7 @@ export default p => {
 
   p.draw = () => {
     for (let i = 0; i < p.random(7) + 3; i++) {
-      amplitude = p.random(100) + 25;
+      amp = p.random(100) + 25;
       freq = p.random(1.0) / 15;
       sineWave();
     }
