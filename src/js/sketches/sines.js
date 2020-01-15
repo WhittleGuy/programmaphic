@@ -1,16 +1,11 @@
-//! Original tutorial: https://medium.com/front-end-weekly/learning-the-p5-canvas-drawing-library-in-es6-and-webpack-bf514a679544
-//! Grouping into multiple functions: https://github.com/eatspaint/generative/blob/master/js/sketches/moire.js
-
 export default p => {
-  const colors = ["#f6f740", "#44ccff", "#ff47da", "#ffffff"];
-  const amount = 500;
+  const colors = ["#f6f740", "#44ccff", "#ff47da"];
+  const amount = 750;
   let freq;
-  let offset;
-
-  let sines = [];
+  let amplitude;
 
   const canvas = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight * 0.92);
+    p.createCanvas(p.windowWidth, p.windowHeight * 0.95);
     p.imageMode(p.CENTER);
     p.angleMode(p.DEGREES);
 
@@ -25,14 +20,15 @@ export default p => {
 
   const sineWave = () => {
     randStroke();
-    let y = (p.windowHeight * 0.9) / 2;
+    let y = (p.windowHeight * 0.95) / 2;
     p.beginShape();
     p.vertex(0, y);
-    for (let i = 1; i < amount; i++) {
+    let pha = p.random(100);
+    for (let i = 1; i < amount + pha; i++) {
       let sinOffset = Math.sin(freq * i);
-      let sinX = i * (p.windowWidth / amount);
-      let sinY = y + sinOffset * offset;
-      p.bezierVertex(sinX, sinY, sinX, sinY - 1, sinX, sinY);
+      let sinX = i * (p.windowWidth / amount) - pha;
+      let sinY = y + sinOffset * amplitude;
+      p.bezierVertex(sinX, sinY, sinX, sinY, sinX, sinY);
     }
     p.endShape();
   };
@@ -43,12 +39,11 @@ export default p => {
     p.smooth();
     p.background(0);
     p.noLoop();
-    sines.push(sineWave());
   };
 
   p.draw = () => {
-    for (let i = 0; i < p.random(10) + 2; i++) {
-      offset = p.random(100) + 7;
+    for (let i = 0; i < p.random(7) + 3; i++) {
+      amplitude = p.random(100) + 25;
       freq = p.random(1.0) / 15;
       sineWave();
     }
