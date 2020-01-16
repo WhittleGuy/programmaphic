@@ -25,7 +25,7 @@ export default function Particle(gfx, w, h, scl) {
   };
 
   this.show = () => {
-    gfx.stroke(255, scl);
+    gfx.stroke(255, scl / 3);
     gfx.strokeWeight(1);
 
     gfx.line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
