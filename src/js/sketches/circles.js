@@ -22,16 +22,17 @@ export default p => {
     let points = [];
     let xoff = seed;
     let yoff = seed;
+    //! Creating a circle of points
     for (let i = 0; i < ANG_RES * revs; i++) {
       let r = p.noise(xoff, yoff);
       points[i] = new point(
         p,
         p.windowWidth / 2 +
           Math.cos(i * 0.0174532925) * amp +
-          Math.tan(r) * variance,
+          Math.tan(r) * variance, //? variance by noise
         (p.windowHeight * 0.95) / 2 +
           Math.sin(i * 0.0174532925) * amp -
-          Math.tan(r) * variance
+          Math.tan(r) * variance //? variance by noise
       );
       xoff += INC;
       xoff += INC;
