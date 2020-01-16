@@ -3,7 +3,7 @@ export default p => {
   const BEG_AMP = (p.windowHeight * 0.95) / 3;
 
   const INC = 0.01;
-  const BEG_VAR = 50;
+  const BEG_VAR = 30;
 
   let mult = p.floor(Math.random() * 4 + 2);
 
