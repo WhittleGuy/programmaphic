@@ -1,16 +1,12 @@
 //! https://www.youtube.com/watch?v=BjoM9oKOAKY
 
-import Particle from "./particle";
-
 export default p => {
-  const INC = 0.05;
-  const SCL = 20;
+  const INC = 0.1;
+  const SCL = 25;
   const WIDTH = p.windowWidth;
   const HEIGHT = p.windowHeight * 0.95;
   let cols, rows;
   let zoff = 0;
-  let particles = [];
-  let flowField = [];
 
   const initCanvas = () => {
     p.createCanvas(WIDTH, HEIGHT);
@@ -21,12 +17,6 @@ export default p => {
     initCanvas();
     cols = p.floor(WIDTH / SCL);
     rows = p.floor(HEIGHT / SCL);
-
-    flowField = new Array(cols * rows);
-
-    for (let i = 0; i < 2000; i++) {
-      particles[i] = new Particle(p, WIDTH, HEIGHT, SCL);
-    }
   };
 
   p.draw = () => {
@@ -39,9 +29,13 @@ export default p => {
         let angle = p.noise(xoff, yoff, zoff) * p.TWO_PI;
         let v = p.createVector(Math.cos(angle), Math.sin(angle));
         v.setMag(0.25);
-        flowField[index] = v;
+
         xoff += INC;
-        p.stroke(Math.tan(angle) * 255, Math.cos(angle) * 255, Math.sin(angle) * 255);
+        p.stroke(
+          (1 / Math.cos(angle)) * 255,
+          (1 / Math.tan(angle)) * 255,
+          Math.sin(angle) * 255
+        );
         p.push();
         p.translate(x * SCL, y * SCL);
         p.rotate(v.heading());
