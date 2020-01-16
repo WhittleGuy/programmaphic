@@ -5,8 +5,8 @@ import Particle from "./particle";
 export default p => {
   const INC = 0.05;
   const SCL = 20;
-  const WIDTH = p.windowWidth;
-  const HEIGHT = p.windowHeight * 0.95;
+  const WIDTH = p.floor(window.innerWidth);
+  const HEIGHT = p.floor(window.innerHeight * 0.95);
   let cols, rows;
   let zoff = 0;
   let particles = [];
