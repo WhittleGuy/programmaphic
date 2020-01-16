@@ -5,8 +5,8 @@ import Particle from "./particle";
 export default p => {
   const INC = 0.05;
   const SCL = 20;
-  const WIDTH = p.floor(1710);
-  const HEIGHT = p.floor(950);
+  const WIDTH = p.windowWidth;
+  const HEIGHT = p.windowHeight * 0.95;
   let cols, rows;
   let zoff = 0;
   let particles = [];
@@ -41,11 +41,7 @@ export default p => {
         v.setMag(0.25);
         flowField[index] = v;
         xoff += INC;
-        p.stroke(
-          Math.tan(angle) * 255,
-          Math.cos(angle) * 255,
-          Math.sin(angle) * 255
-        );
+        p.stroke(Math.tan(angle) * 255, Math.cos(angle) * 255, Math.sin(angle) * 255);
         p.push();
         p.translate(x * SCL, y * SCL);
         p.rotate(v.heading());
