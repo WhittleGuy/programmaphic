@@ -1,6 +1,6 @@
 export default p => {
   const ANG_RES = 360;
-  const BEG_AMP = 300;
+  const BEG_AMP = (p.windowHeight * 0.95) / 3;
 
   const INC = 0.01;
   const BEG_VAR = 50;
