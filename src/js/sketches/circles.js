@@ -1,6 +1,6 @@
 export default p => {
   const ANG_RES = 360;
-  const BEG_AMP = 400;
+  const BEG_AMP = 300;
 
   const INC = 0.01;
   const BEG_VAR = 50;
