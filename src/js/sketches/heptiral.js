@@ -55,7 +55,7 @@ export default p => {
       p.stroke(255);
       p.heptagonSide(amp, adj);
       p.rotate(360 / 7);
-      p.translate(230, -510);
+      p.translate(70, -850);
     }
   };
 
@@ -68,7 +68,7 @@ export default p => {
   p.draw = () => {
     p.background(0);
     let mult = Math.floor(Math.random() * 50) + 50;
-    let size = Math.floor(Math.random() * 25) + 50;
+    let size = Math.floor(Math.random() * 50) + 100;
     let inc = Math.floor(Math.random() * 3);
     let rot = Math.floor(Math.random() * 15);
     for (let k = 0; k < mult; k++) {
