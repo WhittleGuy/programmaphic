@@ -68,7 +68,7 @@ export default p => {
   p.draw = () => {
     p.background(0);
     let mult = Math.floor(Math.random() * 50) + 50;
-    let size = Math.floor(Math.random() * 50) + 100;
+    let size = Math.floor(Math.random() * 25) + 50;
     let inc = Math.floor(Math.random() * 3);
     let rot = Math.floor(Math.random() * 15);
     for (let k = 0; k < mult; k++) {
