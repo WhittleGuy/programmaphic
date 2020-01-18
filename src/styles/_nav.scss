@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5rem;
+    width: 7rem;
     height: 100%;
     color: white;
     text-decoration: none;
@@ -36,7 +36,7 @@
       position: absolute;
       top: 4.5vh;
       left: 0;
-      width: 5rem;
+      width: 7rem;
       height: 0.5vh;
       background: $secondary;
       transition: all 0.3s ease;
@@ -45,10 +45,10 @@
       &::after {
         content: "";
         position: absolute;
-        top: 4.75vh;
+        top: 4.5vh;
         left: 0;
-        width: 5rem;
-        height: 0.75vh;
+        width: 7rem;
+        height: 1vh;
         background: $secondary;
         transition: all 0.3s ease;
       }
