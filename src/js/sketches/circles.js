@@ -1,10 +1,8 @@
 export default p => {
   const ANG_RES = 360;
   const BEG_AMP = (p.windowHeight * 0.95) / 3;
-
   const INC = 0.01;
   const BEG_VAR = 30;
-
   let mult = p.floor(Math.random() * 4 + 2);
 
   //! Basic Canvas settings and creation
@@ -18,6 +16,7 @@ export default p => {
     p.smooth();
   };
 
+  //! Makes a circle & takes parameters to allow variance in loops
   p.circle = (seed, amp, revs, variance) => {
     let points = [];
     let xoff = seed;
@@ -35,7 +34,7 @@ export default p => {
           Math.tan(r) * variance //? variance by noise
       );
       xoff += INC;
-      xoff += INC;
+      yoff += INC;
     }
 
     //! Connecting all the points
