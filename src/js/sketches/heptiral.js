@@ -6,7 +6,7 @@ export default p => {
     p.colorMode(p.RGB);
     p.angleMode(p.DEGREES);
     p.createCanvas(p.windowWidth, p.windowHeight * 0.95);
-    p.frameRate(3);
+    p.frameRate(1);
     p.imageMode(p.CENTER);
     p.translate(p.windowWidth / 2, (p.windowHeight * 0.95) / 2);
     p.smooth();
