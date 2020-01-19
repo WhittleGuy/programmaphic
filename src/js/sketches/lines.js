@@ -25,7 +25,6 @@ export default p => {
     for (let y = 0; y < rows; y++) {
       let xoff = 0;
       for (let x = 0; x < cols; x++) {
-        let index = x + y * cols;
         let angle = p.noise(xoff, yoff, zoff) * p.TWO_PI;
         let v = p.createVector(Math.cos(angle), Math.sin(angle));
         v.setMag(0.25);

@@ -15,8 +15,8 @@ export default class Nav extends Component {
           <NavLink className="NavLink" to="./circles">
             CIRCLES
           </NavLink>
-          <NavLink className="NavLink" to="./heptiral">
-            HEPTIRAL
+          <NavLink className="NavLink" to="./spirographs">
+            SPIRO
           </NavLink>
           <NavLink className="NavLink" to="./lines">
             LINES
