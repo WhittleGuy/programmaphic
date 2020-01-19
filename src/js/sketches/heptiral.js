@@ -1,105 +1,76 @@
 export default p => {
-  const ANG_RES = 360;
+  const WIDTH = p.windowWidth;
+  const HEIGHT = p.windowHeight * 0.95;
+  const H_CENTER = WIDTH / 2;
+  const V_CENTER = HEIGHT / 2;
 
-  //! Basic Canvas settings and creation
-  p.initCanvas = () => {
+  // polygon of numSides and amp drawn onto gfx
+  const polygon = (gfx, numSides, amp) => {
+    const SIDE_RES = p.TWO_PI / numSides; //arc anle for each side
+    let start = 0;
+    let vertices = [];
+
+    //stores vertices for the polygon
+    for (let i = 0; i < numSides; i++) {
+      vertices[i] = [
+        H_CENTER + amp * Math.cos(start),
+        V_CENTER + amp * Math.sin(start)
+      ];
+      start += SIDE_RES;
+    }
+
+    //draws a line between each set of vertices
+    for (let j = 0; j < numSides - 1; j++) {
+      gfx.line(
+        vertices[j][0],
+        vertices[j][1],
+        vertices[j + 1][0],
+        vertices[j + 1][1]
+      );
+    }
+
+    //connects the last vertex to the starting vertex
+    gfx.line(
+      vertices[0][0],
+      vertices[0][1],
+      vertices[numSides - 1][0],
+      vertices[numSides - 1][1]
+    );
+  };
+
+  p.setup = () => {
     p.colorMode(p.RGB);
-    p.angleMode(p.DEGREES);
-    p.createCanvas(p.windowWidth, p.windowHeight * 0.95);
-    p.frameRate(0.5);
+    p.createCanvas(WIDTH, HEIGHT);
     p.imageMode(p.CENTER);
+    p.frameRate(1);
     p.smooth();
   };
 
-  //! Makes a circle & takes parameters to allow variance in loops
-  const heptagon = (gfx, amp, adj) => {
-    let points = [];
-    let start = 0;
-    //! Creating a heptagon of points
-    for (let i = 0; i < 7; i++) {
-      for (let j = start; j < start + Math.floor(ANG_RES / 7) + adj; j++) {
-        if (i % 2 === 0) {
-          points[j] = new point(
-            gfx,
-            gfx.windowWidth / 2 -
-              amp *
-                (1 -
-                  (1 - Math.cos(p.TWO_PI / 14)) *
-                    Math.sin(((7 / 2) * j * p.TWO_PI) / 360)) *
-                Math.cos((j * p.TWO_PI) / 360),
-            (gfx.windowHeight * 0.95) / 2 +
-              amp *
-                (1 -
-                  (1 - Math.cos(p.TWO_PI / 14)) *
-                    Math.sin(((7 / 2) * j * p.TWO_PI) / 360)) *
-                Math.sin((j * p.TWO_PI) / 360)
-          );
-        }
-        if (i % 2 === 1) {
-          points[j] = new point(
-            gfx,
-            gfx.windowWidth / 2 -
-              amp *
-                (1 +
-                  (1 - Math.cos(p.TWO_PI / 14)) *
-                    Math.sin(((7 / 2) * j * p.TWO_PI) / 360)) *
-                Math.cos((j * p.TWO_PI) / 360),
-            (gfx.windowHeight * 0.95) / 2 +
-              amp *
-                (1 +
-                  (1 - Math.cos(p.TWO_PI / 14)) *
-                    Math.sin(((7 / 2) * j * p.TWO_PI) / 360)) *
-                Math.sin((j * p.TWO_PI) / 360)
-          );
-        }
-      }
-      start += Math.floor(ANG_RES / 7);
-    }
-
-    //! Connecting all the points
-    for (let i = 0; i < points.length - 1; i++) {
-      gfx.line(
-        points[i].pos.x,
-        points[i].pos.y,
-        points[i + 1].pos.x,
-        points[i + 1].pos.y
-      );
-    }
-  };
-
-  const graphics = gfx => {
-    gfx.stroke(Math.random() * 255, Math.random() * 255, Math.random() * 255);
-  };
-
-  //! Onetime setup commands
-  p.setup = () => {
-    p.initCanvas();
-  };
-
-  //! Rendering
   p.draw = () => {
+    let gfx = p.createGraphics(WIDTH, HEIGHT);
+    let mult = Math.floor(Math.random() * 50 + 25); //number of scaled up copies
+    let sides = Math.floor(Math.random() * 9 + 3); //sides of the polygon
+    const ANGLES = [1, 2, 15, 22.5, 45, 90, 180]; //available angles of rotation
+    let rot = ANGLES[Math.floor(Math.random() * ANGLES.length)]; //selection of angle of rotation
+
     p.background(0);
-    let mult = Math.floor(Math.random() * 50) + 10;
-    let size = Math.floor(Math.random() * 50) + 200;
-    let inc = Math.floor(Math.random() * 10 + 5) / 1000;
-    let rot = Math.floor(Math.random() * 45 + 1);
-    let gfx = p.createGraphics(p.windowWidth, p.windowHeight * 0.95);
+    p.translate(H_CENTER, V_CENTER);
     graphics(gfx);
-    p.translate(p.windowWidth / 2, (p.windowHeight * 0.95) / 2);
-    heptagon(gfx, size, 4);
+    polygon(gfx, sides, 200);
+    p.image(gfx, 0, 0);
     for (let k = 0; k < mult; k++) {
+      p.rotate(p.PI * (rot / 180));
+      p.scale(1.01);
       p.image(gfx, 0, 0);
-      p.rotate(rot);
-      p.scale(1 + inc);
     }
   };
 };
 
-//! Definition of a point
-function point(gfx, x, y) {
-  this.pos = gfx.createVector(x, y);
-
-  this.show = () => {
-    gfx.strokeWeight(1);
-  };
-}
+const graphics = gfx => {
+  gfx.stroke(
+    Math.random() * 235 + 20,
+    Math.random() * 235 + 20,
+    Math.random() * 235 + 20
+  );
+  gfx.strokeWeight(0.5);
+};
